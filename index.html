@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/annyang.js"></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script> 
+	<script src="js/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/stts.js"></script>
+	<title>speech recognition</title> 
+</head>
+<body>
+	<div id="wrapper">
+
+		<div id="wrapperST">
+		<h2>Try Speech-To-Text</h2>
+			<p>Press "Start" and speak</p>
+	   	    <button id="startBtn" onclick="startRecording()">Start</button>
+	   		<button id="stopBtn"  onclick="stopRecording()">Stop</button>
+	   		<button id="clearBtn"  onclick="clearText()">Clear</button>
+	 	   <p>Recognition Output</p>
+	 	   <select id="languages"></select>
+	 	   <div id="showText" style="height:150px;overflow:auto;"><p id="pText"></p></div>
+	 	</div>
+
+	 	<div id="wrapperTS">
+	 	<h2>Try Text-To-Speech</h2>
+	 		<form>
+
+  				<textarea  id="vText" type="text" name="text" size=80 >PULKOVO terminal information Bravo,issued at 2350 Zulu. Few clouds at 2000 , visibility 8000 metres. Temperature 29, dew point 27. Wind 220 at 10 knots.QNH 1009. Landings runway RW10L, departures runway RW10R. Advise controller on initial contact you have information Bravo.
+  				</textarea>
+  				<br/>
+  				<input  id="button" onclick="ts()" type='button' value='Play' />
+
+            </form> 
+	 	</div>
+
+    </div>
+
+    <div>
+    	<h2>Speech-To-Text:The specific words</h2>
+    	<p>
+weather, climate, typhoon, windy, cloudy, sunny, snowy, showery, foggy, storm, rainy, drizzle, breezy, sleet, snow, wet, icy, degree, temperature 
+    	</p>
+    	<div id="test">
+    		<h2>TEST</h2>
+    		<p id="pTest"></p>
+    	</div>
+    </div>
+
+</body>
+</html>

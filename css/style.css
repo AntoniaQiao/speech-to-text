@@ -1,0 +1,42 @@
+body{
+	margin:0 0;
+	padding:0 0;
+	color:#333;
+}
+
+#wrapper{
+	height:500px;
+	width:1000px;
+	margin:20px;
+	background-color: #DDDDDD;
+}
+
+#wrapperST{
+	margin:10px; 
+}
+
+h2{
+	background-color: black;
+	color:white;
+}
+
+#showText{
+	background-color: white;
+}
+
+#wrapperTS{
+	margin:10px; 
+}
+
+#vText{
+	height: 50px;
+	width:980px;
+	overflow: auto;
+}
+
+#button{
+	width:150px;
+	height:30px;
+	background-color: #5599FF;
+	border-radius: 10px;
+}
